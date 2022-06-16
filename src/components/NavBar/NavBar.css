@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.naviBar {
+    display: flex;
+    flex-direction: row;
+    background: #FFE6D4;
+    border-radius: 25px;
+}
+
+.nav-bar {
+    background: #FFE6D4;
+    padding: 20px;
+    display: block;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.menu,
+.listaDesplegable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    background: #ffe6d4;
+    width: 300%;
+    margin-left: -300%;
+    transition: all 0.5s;
+}
+
+.carrito {
+    margin-left: 0;
+}
+
+.linkMenu {
+    display: block;
+    padding: 20px;
+    color: rgb(116, 90, 56);
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.linkMenu:hover {
+    transition: all 0.7s;
+    background: #a58e7e;
+}
+
+.listaDesplegable .linkMenu:hover {
+    background: #a58e7e;
+}
+
+.listaDesplegable {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.itemDeMenu {
+    list-style: none;
+}
+
+.listaDesplegable .linkMenu {
+    background: whitesmoke;
+    padding-left: 50px;
+}
+
+.mostrar {
+    margin-left: 0;
+}
+
+.letraNavCur {
+    font-size: 5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.linkIniNav {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width:1024px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .menu {
+        margin-left: 0;
+        display: flex;
+    }
+
+    .conteSubMenu {
+        position: relative;
+    }
+
+    .listaDesplegable {
+        position: absolute;
+        top: 60px;
+        width: auto;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .conteSubMenu:hover .listaDesplegable {
+        opacity: 1;
+        visibility: visible;
+    }
+}
