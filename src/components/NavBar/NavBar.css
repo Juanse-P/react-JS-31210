@@ -74,6 +74,16 @@
     color: black;
 }
 
+.botonCarrito {
+    background: #FFE6D4;
+    color: rgb(185, 142, 84);
+    border: 0px;
+}
+
+.botonCarrito:hover {
+    background: #ffd2b1;
+}
+
 @media screen and (max-width: 700px) {
     .miNavegador {
         flex-direction: column;

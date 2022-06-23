@@ -4,7 +4,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const CartWidget = () => {
     return (
-        <li className="itemDeMenu linkMenu"><buttom><ShoppingCartIcon sx={{ fontSize: 45 }} /></buttom></li>
+        <li className="itemDeMenu linkMenu"><button className="botonCarrito"><ShoppingCartIcon sx={{ fontSize: 60 }} /></button></li>
     )
 }
 

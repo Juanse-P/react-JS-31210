@@ -1,0 +1,61 @@
+.proxCardItem {
+    margin: 1rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 7px;
+    border: 2px gray solid;
+    background: #ffe6d4be;
+}
+
+.hijoDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hijoDesc p {
+    color: gray;
+}
+
+.botonMenos {
+    background: grey;
+    padding: 5px 1.5rem 5px 1.5rem;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.hijoCantidades {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botonMas {
+    background: rgb(0, 140, 255);
+    padding: 5px 1.5rem 5px 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.botonReset {
+    background-color: rgb(255, 82, 82);
+    padding: 7px 2rem 7px 2rem;
+    margin: 10px;
+}
+
+.botonAgregar {
+    background: #FFE6D4;
+    padding: 7px 2rem 7px 2rem;
+    margin: 10px;
+}
+
+.hijoDeLaCard {
+    padding: 1rem;
+}
+
+.cantidad {
+    font-size: 1.2rem;
+}
