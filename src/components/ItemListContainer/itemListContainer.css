@@ -1,0 +1,26 @@
+.loaderItem {
+    align-self: center;
+}
+
+.centrado {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.cargando {
+    text-align: right;
+    border: 5px solid #FFE6D4;
+    font-size: 3rem;
+}
+
+.loadingCard {
+    background: rgba(245, 245, 245, 0.938);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}

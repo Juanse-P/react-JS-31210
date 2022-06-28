@@ -19,16 +19,18 @@ const NavBar = () => {
                     <li className="mostrarSubmenu itemDeMenu linkMenu">
                         <p className="linkMenu" href="./">Categorias (filtro)<ArrowDropDownIcon /></p>
                         <ul className="listaDesplegable">
-                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Floral <ArrowForwardIcon /></a></li>
                             <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Frutal <ArrowForwardIcon /></a></li>
-                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Verde <ArrowForwardIcon /></a></li>
-                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Aromatico <ArrowForwardIcon /></a></li>
-                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Fougère <ArrowForwardIcon /></a></li>
-                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Cítrico <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Aromática <ArrowForwardIcon /></a></li>
                             <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Chipre <ArrowForwardIcon /></a></li>
-                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Amaderado <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Fougère <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Gourmand <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Floral <ArrowForwardIcon /></a></li>
                             <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Oriental <ArrowForwardIcon /></a></li>
-                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Musk <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Amaderada <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Especiada <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Acuática <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Fresca <ArrowForwardIcon /></a></li>
+                            <li className="itemDeMenu"><a className="linkMenu linkMenuDesp" href="./">Cítrica <ArrowForwardIcon /></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -39,16 +41,4 @@ const NavBar = () => {
         </>
     )
 }
-/* <ul className="listaDesplegable">
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Floral</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Frutal</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Verde</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Aromatico</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Fougère</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Cítrico</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Chipre</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Amaderado</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Oriental</a></li>
-                            <li className="itemDeMenu"><a className="linkMenu" href="./">Musk</a></li>
-                        </ul> */
 export default NavBar;
