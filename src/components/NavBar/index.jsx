@@ -35,7 +35,7 @@ const NavBar = () => {
                     </li>
                 </ul>
                 <ul className="listCarrito">
-                    <CartWidget />
+                    <li className="itemDeMenu linkMenu"><button className="botonCarrito"><CartWidget tamano={55} /></button></li>
                 </ul>
             </nav>
         </>

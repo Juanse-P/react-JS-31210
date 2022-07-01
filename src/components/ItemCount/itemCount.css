@@ -24,6 +24,8 @@
     padding: 5px 1.5rem 5px 1.5rem;
     font-size: 1.4rem;
     color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .hijoCantidades {
@@ -31,6 +33,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 30px;
 }
 
 .botonMas {
@@ -38,6 +41,8 @@
     padding: 5px 1.5rem 5px 1.5rem;
     font-size: 1.2rem;
     color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .botonReset {
@@ -50,6 +55,9 @@
     background: #FFE6D4;
     padding: 7px 2rem 7px 2rem;
     margin: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
 }
 
 .hijoDeLaCard {

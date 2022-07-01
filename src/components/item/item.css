@@ -63,3 +63,16 @@
 .imaCard {
     width: 250px;
 }
+
+.hijoDeLaCard h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.hijoDeLaCard h3 {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.hijoDeLaCard p {
+    font-size: 19px;
+    font-family: 'Arima', cursive;
+}

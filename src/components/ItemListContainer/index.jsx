@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./itemListContainer.css";
 import Title from "../Title";
-import ItemList from "../itemList";
+import ItemList from "../ItemList";
 import RingLoader from 'react-spinners/RingLoader';
 import { getData } from "../../mocks/fakeApi";
 

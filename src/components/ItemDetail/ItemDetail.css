@@ -1,0 +1,86 @@
+.bigItemDetail {
+    margin: 2rem 10rem 2rem 10rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.856);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas:
+        "imageDet HeadDet"
+        "hrPrDet  hrPrDet"
+        "descriDet descriDet"
+        "hrSecDet hrSecDet"
+        "recomeDet recomeDet";
+    gap: 1rem;
+}
+
+.hrPrDet {
+    grid-area: hrPrDet;
+}
+
+.imageDet {
+    width: 100%;
+}
+
+.descriDet {
+    grid-area: descriDet;
+}
+
+.hrSecDet {
+    grid-area: hrSecDet;
+}
+
+.recomeDet {
+    grid-area: recomeDet;
+}
+
+.headDet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem 0.5rem 2rem 0.5rem;
+}
+
+.hijoDelDetail h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.hijoDelDetail h2 {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.hijoDelDetail h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.hijoDelDetail p {
+    font-size: 20px;
+    font-family: 'Arima', cursive;
+}
+
+@media screen and (max-width: 1280px) {
+    .bigItemDetail {
+        margin: 2rem 5rem 2rem 5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bigItemDetail {
+        margin: 2rem 1rem 2rem 1rem;
+    }
+}
+@media screen and (max-width: 920px) {
+    .bigItemDetail {
+        margin: 1rem 1rem 1rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "imageDet"
+            "HeadDet"
+            "hrPrDet"
+            "descriDet"
+            "hrSecDet"
+            "recomeDet";
+        gap: 1rem;
+    }
+}
