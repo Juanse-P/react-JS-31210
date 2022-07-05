@@ -4,17 +4,26 @@ import Title from "../Title";
 import ItemList from "../ItemList";
 import RingLoader from 'react-spinners/RingLoader';
 import { getData } from "../../mocks/fakeApi";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({ bienvenida }) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const { categoriaId } = useParams();
+
     useEffect(() => {
-        getData
-            .then((result) => setData(result))
-            .catch((error) => console.log(error))
-            .finally(() => setLoading(false))
-    }, [])
+        if (categoriaId) {
+            getData
+                .then(result => setData(result.filter(perfume => perfume.category === categoriaId || perfume.category2 === categoriaId || perfume.category3 === categoriaId)))
+                .finally(() => setLoading(false))
+        } else {
+            getData
+                .then((result) => setData(result))
+                .catch((error) => console.log(error))
+                .finally(() => setLoading(false))
+        }
+    }, [categoriaId])
 
     const onAdd = (cantidad, titulo, referencia) => {
         console.log(`añadiste ${cantidad} unidades de ${titulo} ${referencia} al carrito`);

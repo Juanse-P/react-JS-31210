@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail";
-import { getDetailPerfume } from "../../mocks/fakeApi";
+import { getData } from "../../mocks/fakeApi";
 import RingLoader from 'react-spinners/RingLoader';
 import "./ItemDetailContainer.css";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState({});
     const [loading, setLoading] = useState(true);
+
+    const { detalleId } = useParams();
     useEffect(() => {
-        getDetailPerfume
-            .then((result) => setData(result))
+        getData
+            .then(result => setData(result.find(perfume => perfume.id === parseInt(detalleId))))
             .catch((error) => console.log(error))
             .finally(() => setLoading(false))
-    }, [])
+    }, [detalleId])
     const onAdd = (cantidad, titulo, referencia) => {
         console.log(`añadiste ${cantidad} unidades de ${titulo} ${referencia} al carrito`);
     }

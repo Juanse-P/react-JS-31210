@@ -2,6 +2,9 @@ const perfumes = [
     {
         id: 1,
         olfactoryFamily: "Frutal Floral",
+        category: "Frutal",
+        category2: "Floral",
+        category3: "No",
         brand: "HERMÈS",
         title: "UN JARDIN SUR LE NIL",
         fastDescription: "Eau de Toilette vaporizador unisex 100 ml",
@@ -17,6 +20,9 @@ const perfumes = [
     {
         id: 2,
         olfactoryFamily: "Aromática Acuática",
+        category: "Aromática",
+        category2: "Acuática",
+        category3: "No",
         brand: "Giorgio Armani",
         title: "ACQUA DI GIÒ",
         fastDescription: "Eau de Toilette - Colonia vaporizador para hombre 100 ml",
@@ -31,6 +37,9 @@ const perfumes = [
     {
         id: 3,
         olfactoryFamily: "Chipre Aromática",
+        category: "Chipre",
+        category2: "Aromática",
+        category3: "No",
         brand: "Rochas",
         title: "EAU DE ROCHAS HOMME",
         fastDescription: "Eau de Toilette vaporizador para hombre 100 ml",
@@ -45,6 +54,9 @@ const perfumes = [
     {
         id: 4,
         olfactoryFamily: "Fougère Aromática",
+        category: "Fougère",
+        category2: "Aromática",
+        category3: "No",
         brand: "Paco Rabanne",
         title: "PACO RABANNE POUR HOMME",
         fastDescription: "Eau de Toilette - Colonia vaporizador para hombre 100 ml",
@@ -59,6 +71,9 @@ const perfumes = [
     {
         id: 5,
         olfactoryFamily: "Gourmand Frutal Gourmand",
+        category: "Gourmand",
+        category2: "Frutal",
+        category3: "Gourmand",
         brand: "Nuxe",
         title: "NUXE SUN eau délicieuse parfumante",
         fastDescription: "Eau de Toilette - Colonia vaporizador unisex 100 ml",
@@ -73,6 +88,9 @@ const perfumes = [
     {
         id: 6,
         olfactoryFamily: "Floral Amaderada",
+        category: "Floral",
+        category2: "Amaderada",
+        category3: "No",
         brand: "Carolina Herrera",
         title: "212 NYC MEN",
         fastDescription: "Eau de Toilette - Colonia vaporizador para hombre 100 ml",
@@ -87,6 +105,9 @@ const perfumes = [
     {
         id: 7,
         olfactoryFamily: "Oriental Amaderada Especiada",
+        category: "Oriental",
+        category2: "Amaderada",
+        category3: "Especiada",
         brand: "Hugo Boss",
         title: "BOSS ORANGE MAN",
         fastDescription: "Eau de Toilette vaporizador para hombre 100 ml",
@@ -101,6 +122,9 @@ const perfumes = [
     {
         id: 8,
         olfactoryFamily: "Amaderada Especiada",
+        category: "Amaderada",
+        category2: "Especiada",
+        category3: "No",
         brand: "Hugo Boss",
         title: "BOSS BOTTLED",
         fastDescription: "Eau de Toilette vaporizador para hombre 100 ml",
@@ -115,6 +139,9 @@ const perfumes = [
     {
         id: 9,
         olfactoryFamily: "Especiada Cítrica",
+        category: "Especiada",
+        category2: "Cítrica",
+        category3: "No",
         brand: "Versace",
         title: "VERSACE L'HOMME",
         fastDescription: "Eau de Toilette vaporizador para hombre 100 ml",
@@ -129,6 +156,9 @@ const perfumes = [
     {
         id: 10,
         olfactoryFamily: "Acuática Amaderada",
+        category: "Acuática",
+        category2: "Amaderada",
+        category3: "No",
         brand: "Paco Rabanne",
         title: "INVICTUS",
         fastDescription: "Eau de Toilette - Colonia vaporizador para hombre 100 ml",
@@ -143,41 +173,42 @@ const perfumes = [
     {
         id: 11,
         olfactoryFamily: "Fresca Cítrica",
+        category: "Fresca",
+        category2: "Cítrica",
+        category3: "No",
         brand: "Calvin Klein",
         title: "CK EVERYONE",
-        fastDescription: "Eau de Toilette - Colonia vaporizador unisex 100 ml", 
+        fastDescription: "Eau de Toilette - Colonia vaporizador unisex 100 ml",
         description: "Calvin Klein recurre a su estilo minimalista y sin exageraciones para ofrecer un lienzo en blanco a una nueva generación con Calvin Klein CK Everyone, un eau de toilette cítrica verde, minimalista y sin género para hombre y para mujer a la vez. Una posibilidad de autoexpresión sin límites, Calvin Klein CK Everyone es un verdadero perfume unisex que defiende una visión empática de la vida y de las personas, diseñado para hombres y mujeres que hace suya la fragancia sin dejarse dominar por ella. Incluyente, vegano y ecológico, Calvin Klein CK Everyone es el perfume Calvin Klein para hombres y mujeres deseosos de cambiar el mundo, con un énfasis en los ingredientes de origen natural y materiales reciclados y reciclables. Innovadora y depurada, jugando con el contraste entre el frescor y la intensidad, Calvin Klein CK Everyone es la fragancia natural definitiva para acompañar el rumbo juvenil y la necesidad de pasar a la acción y rechazar las normas de la sociedad – la respuesta de la Generación Z a la icónica Calvin Klein CK One de los años noventa. Alberto Morillas ha creado una fragancia compleja que captura la esencia del espíritu Calvin Klein CK Everyone, la idea de que en cada uno de nosotros yace una multitud. El resultado es un frescor radiante en las notas de salida de aceite orgánico de naranja, limón, té verde y bergamota, que se suaviza en un acorde de té azul en el corazón para una cualidad fluida y empapada. El jazmín y el lichi estimulan las aromáticas, con sándalo, madera de cedro, y un fondo de ámbar que se despliega en un final seco y sólido. El líquido viene en un frasco estilizado y depurado, decorado con una icónica cinturilla Calvin Klein.",
         recomendations: "CK Everyone de Calvin Klein, es una fragancia de la familia Cítrica Verde para mujer y hombre. Por sus notas olfativas, está pensada para usada en el día a día y de manera atemporal. Dispone de una buena proyección y una durabilidad moderada. Esta fragancia está recomendada para hombres y mujeres jóvenes. Para prolongar el aroma durante más tiempo, aplica tu fragancia en el interior de las muñecas y detrás del lóbulo de las orejas. Estas zonas de pulso tienen una temperatura superior al resto del cuerpo, y esto ayudará a que la fragancia se evapore más lentamente.",
-        price: 98000, 
+        price: 98000,
         image: "https://i1.perfumesclub.com/grandewp/117841-3.webp",
         image2: "https://i1.perfumesclub.com/grandewp/117841.webp",
         image3: "https://i1.perfumesclub.com/grandewp/117841-4.webp",
         stock: 18
-    }, 
-    { 
-        id: 12, 
-        olfactoryFamily: "Cítrica Aromática", 
-        brand: "Calvin Klein", 
-        title: "CK ONE", 
-        fastDescription: "Eau de Toilette - Colonia vaporizador unisex 100 ml", 
+    },
+    {
+        id: 12,
+        olfactoryFamily: "Cítrica Aromática",
+        category: "Cítrica",
+        category2: "Aromática",
+        category3: "No",
+        brand: "Calvin Klein",
+        title: "CK ONE",
+        fastDescription: "Eau de Toilette - Colonia vaporizador unisex 100 ml",
         description: "Joven, fresca y atemporal, CK ONE es una fragancia unisex diseñada para usar a diario. Un exquisito equilibrio entre frescura, dinamismo y personalidad, perfecta para cualquier estación del año. Esta es una fragancia dinámica y joven, que aporta un toque sutilmente desenfadado de frescura acorde a tu estilo de vida. Un aroma fresco, envolvente y sutil, perfecto para usar de día y ¡también por la noche! Todo un icono de moda dentro del mundo de la perfumería, - creado por el exitoso perfumista español Alberto Morillas y el perfumista francés Harry Frémont -, que sigue siendo 20 años después líder de ventas mundial. ",
         recomendations: "CK ONE es una fragancia de notas cítricas con fondo de almizcle, que le aporta una durabilidad mayor. Debido a su aroma de intensidad media, es una fragancia perfecta para cualquier momento del día y también para usar por la noche. Esta fragancia de carácter atemporal, es acorde a cualquier estación del año, por lo que puede usarse indistintamente en verano/invierno y primavera/otoño. Para prolongar el aroma durante más tiempo, aplica tu fragancia en el interior de las muñecas y detrás del lóbulo de las orejas. Estas zonas de pulso tienen una temperatura superior al resto del cuerpo, y esto ayudará a que la fragancia se evapore más lentamente. ",
-        price: 103000, 
+        price: 103000,
         image: "https://i1.perfumesclub.com/grandewp/4046-2.webp",
         image2: "https://i1.perfumesclub.com/grandewp/4046.webp",
         image3: "https://i1.perfumesclub.com/grandewp/4046-3.webp",
-        stock: 20 
+        stock: 20
     },
 ];
-export const getData = new Promise((resolve, reject) => {
-    let condition = true
+export const getData = new Promise((resolve) => {
     setTimeout(() => {
-        if (condition) {
-            resolve(perfumes)
-        } else {
-            reject("La carga de productos salio mal")
-        }
-    }, 3000)
+        resolve(perfumes)
+    }, 1000)
 })
 
 const detailPerfume = {

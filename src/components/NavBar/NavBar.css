@@ -51,6 +51,7 @@
     float: none;
     width: 190px;
     margin: 0.3rem;
+    text-decoration: none;
 }
 
 .linkMenuDesp:hover {
@@ -60,6 +61,7 @@
 
 .mostrarSubmenu:hover>.listaDesplegable {
     display: block;
+    z-index: 1000000;
 }
 
 .mostrarSubmenu:hover {
@@ -84,7 +86,7 @@
     background: #ffd2b1;
 }
 
-@media screen and (max-width: 828px) {
+@media screen and (max-width: 700px) {
     .miNavegador {
         flex-direction: column;
         text-align: left;
