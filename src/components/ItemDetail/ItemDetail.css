@@ -58,6 +58,17 @@
     font-family: 'Arima', cursive;
 }
 
+.linkTerminar {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    background: #FFE6D4;
+    padding: 15px;
+    border-radius: 30px;
+}
+
 @media screen and (max-width: 1280px) {
     .bigItemDetail {
         margin: 2rem 5rem 2rem 5rem;
@@ -69,6 +80,7 @@
         margin: 2rem 1rem 2rem 1rem;
     }
 }
+
 @media screen and (max-width: 920px) {
     .bigItemDetail {
         margin: 1rem 1rem 1rem 1rem;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./item.css";
-import ItemCount from "../ItemCount";
+//import ItemCount from "../ItemCount";
 import { Link } from "react-router-dom";
 
 const Item = ({ info, onAdd, initial, }) => {
@@ -19,9 +19,9 @@ const Item = ({ info, onAdd, initial, }) => {
                     <h3>Precio: $ {info.price} cop</h3>
                     <Link to={`/detalle/${info.id}`}><p>Ver mas sobre el producto...</p></Link>
                 </div>
-                <div className="hijoDeLaCard">
+                {/* <div className="hijoDeLaCard">
                     <ItemCount stock={info.stock} title={info.title} fastDescription={info.fastDescription} initial={initial} onAdd={onAdd} />
-                </div>
+                </div> */}
             </div>
         </>
     );

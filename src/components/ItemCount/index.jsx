@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./itemCount.css";
 import CartWidget from "../CartWidget";
 
-const ItemCount = ({ initial, stock, onAdd, title, fastDescription }) => {
+const ItemCount = ({ initial, stock, onAdd }) => {
     const [count, setCount] = useState(initial);
     const restarProductos = () => {
         setCount(count - 1);
@@ -23,7 +23,7 @@ const ItemCount = ({ initial, stock, onAdd, title, fastDescription }) => {
             </div>
             <div className="hijoDeLaCard">
                 <button onClick={resetear} className="botonReset">Resetear cantidad</button>
-                <button disabled={stock <= 0} onClick={() => onAdd(count, title, fastDescription)} className="botonAgregar">Agregar Al Carrito <CartWidget tamano={25}/></button>
+                <button disabled={stock <= 0} onClick={onAdd} className="botonAgregar">Agregar Al Carrito <CartWidget tamano={25}/></button>
             </div>
         </div>
     );
