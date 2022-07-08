@@ -26,7 +26,7 @@ const NavBar = () => {
                         </li>
                     </ul>
                     <ul className="listCarrito">
-                        <li className="itemDeMenu linkMenu">{/* <button className="botonCarrito"> */}<NavLink className="linkMenu botonCarrito" to="/cart"><CartWidget tamano={65} /></NavLink>{/* </button> */}</li>
+                        <li className="itemDeMenu linkMenu"><NavLink className="linkMenu botonCarrito" to="/cart"><CartWidget tamano={65} /></NavLink></li>
                     </ul>
                 </nav>
             </header>

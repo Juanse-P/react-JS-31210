@@ -19,9 +19,6 @@ const Item = ({ info, onAdd, initial, }) => {
                     <h3>Precio: $ {info.price} cop</h3>
                     <Link to={`/detalle/${info.id}`}><p>Ver mas sobre el producto...</p></Link>
                 </div>
-                {/* <div className="hijoDeLaCard">
-                    <ItemCount stock={info.stock} title={info.title} fastDescription={info.fastDescription} initial={initial} onAdd={onAdd} />
-                </div> */}
             </div>
         </>
     );
