@@ -1,9 +1,8 @@
 import React from "react";
 import "./item.css";
-//import ItemCount from "../ItemCount";
 import { Link } from "react-router-dom";
 
-const Item = ({ info, onAdd, initial, }) => {
+const Item = ({ info }) => {
     return (
         <>
             <div className="proxCardItem">

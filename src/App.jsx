@@ -1,3 +1,4 @@
+import "./App.css";
 import React from "react";
 import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
@@ -9,21 +10,22 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import CartProvider from "./Context/CartContext";
+
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<ItemListContainer bienvenida="Hola! Bienvenido a la pagina de Perfu - Mate" />} />
-          <Route path="/categoria/:categoriaId" element={<ItemListContainer bienvenida="Hola! Bienvenido a la pagina de Perfu - Mate" />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
-        </Routes>
-        {/* <ItemListContainer bienvenida="Hola! Bienvenido a la pagina de Perfu - Mate" /> */}
-        {/* <ItemDetailContainer /> */}
-        {/* <Cart/> */}
+        <CartProvider>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer bienvenida="Hola! Bienvenido a la pagina de Perfu - Mate" />} />
+            <Route path="/categoria/:categoriaId" element={<ItemListContainer bienvenida="Hola! Bienvenido a la pagina de Perfu - Mate" />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </>
   )

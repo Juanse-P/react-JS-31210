@@ -3,12 +3,15 @@ import ItemCount from "../ItemCount";
 import "./ItemDetail.css";
 import CarouselDetailItem from "../CarouselDetailItem";
 import { Link } from "react-router-dom";
+import { useCartContext } from "../../Context/CartContext";
 
 const ItemDetail = ({ data }) => {
-    const [goCart, setGocart] = useState(false)
+    const [goCart, setGocart] = useState(false);
+    const { addProduct } = useCartContext();
 
-    const onAdd = () => {
+    const onAdd = (quantity) => {
         setGocart(true);
+        addProduct(data, quantity);
     }
 
     return (
