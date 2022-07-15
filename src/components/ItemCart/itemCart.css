@@ -1,0 +1,56 @@
+.imaCarUni {
+    width: 250px;
+}
+
+.boxCartItem {
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.cartItemBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.leftMarg {
+    border-left: solid 1px black;
+}
+
+.botonQuitItem {
+    background: rgb(255, 82, 82);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.centradoIma {
+    align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+    .cartItemBox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 1px solid black;
+        margin: 1.5rem 10px 1.5rem 10px;
+    }
+
+    .leftMarg {
+        border-left: solid 0 black;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imaCarUni {
+        width: 200px;
+    }
+}

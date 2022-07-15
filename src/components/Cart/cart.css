@@ -1,0 +1,40 @@
+.noCartItems {
+    background: rgba(255, 255, 255, 0.788);
+    margin: 7px;
+    border-radius: 25px;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.linkInitial {
+    text-align: center;
+    text-decoration: none;
+    color: steelblue;
+    font-size: 1.2rem;
+    color: dimgray;
+    background: #FFE6D4;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.carritoVis {
+    background: rgba(255, 255, 255, 0.788);
+    margin: 7px;
+    border-radius: 25px;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.btnVaciarCart {
+    background: rgb(170, 255, 227);
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 850px) {
+    .carritoVis {
+        background: rgba(255, 255, 255, 0.788);
+        margin: 4px;
+        border-radius: 25px;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+}
