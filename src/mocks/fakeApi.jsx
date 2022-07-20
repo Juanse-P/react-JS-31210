@@ -1,4 +1,4 @@
-const perfumes = [
+/* const perfumes = [
     {
         id: 1,
         olfactoryFamily: "Frutal Floral",
@@ -204,35 +204,4 @@ const perfumes = [
         image3: "https://i1.perfumesclub.com/grandewp/4046-3.webp",
         stock: 20
     },
-];
-export const getData = new Promise((resolve) => {
-    setTimeout(() => {
-        resolve(perfumes)
-    }, 1000)
-})
-
-const detailPerfume = {
-    id: 1,
-    olfactoryFamily: "Frutal Floral",
-    brand: "HERMÈS",
-    title: "UN JARDIN SUR LE NIL",
-    fastDescription: "Eau de Toilette vaporizador unisex 100 ml",
-    description: "Un Jardin sur le Nil es un paseo impresionista por las islas-jardín del Nilo, en Asuán, punto de partida de esta nueva andanza olfativa. Mango verde, loto, incienso, cálamo y madera de sicomoro componen el corazón de esta oda refrescante. Un Jardin sur le Nil es un paseo impresionista por las islas-jardín del Nilo, en Asuán, punto de partida de esta nueva andanza olfativa. Mango verde, loto, incienso, cálamo y madera de sicomoro componen el corazón de esta oda refrescante.",
-    recomendations: "Para prolongar el aroma durante más tiempo, aplica tu fragancia en el interior de las muñecas y detrás del lóbulo de las orejas. Estas zonas de pulso tienen una temperatura superior al resto del cuerpo, y esto ayudará a que la fragancia se evapore más lentamente. Aplicar perfume directamente sobre la ropa, puede manchar, dañar y alterar el tejido. Para prolongar la estela de la fragancia, recomendamos utilizar los productos de la gama como geles de ducha, lociones corporales o desodorantes.",
-    price: 298000,
-    image: "https://i1.perfumesclub.com/grandewp/16162-2.webp",
-    image2: "https://i1.perfumesclub.com/grandewp/16162.webp",
-    image3: "https://i1.perfumesclub.com/grandewp/16162-3.webp",
-    stock: 9
-};
-
-export const getDetailPerfume = new Promise((resolve, reject) => {
-    let condition = true
-    setTimeout(() => {
-        if (condition) {
-            resolve(detailPerfume)
-        } else {
-            reject("La carga del Detalle de este item salio mal :(")
-        }
-    }, 2000)
-})
+]; */

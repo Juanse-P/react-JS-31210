@@ -3,8 +3,9 @@ import "./itemListContainer.css";
 import Title from "../Title";
 import ItemList from "../ItemList";
 import RingLoader from 'react-spinners/RingLoader';
-import { getData } from "../../mocks/fakeApi";
+//import { getData } from "../../mocks/fakeApi";
 import { useParams } from "react-router-dom";
+import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = ({ bienvenida }) => {
     const [data, setData] = useState([]);
@@ -13,13 +14,17 @@ const ItemListContainer = ({ bienvenida }) => {
     const { categoriaId } = useParams();
 
     useEffect(() => {
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, 'productos');
         if (categoriaId) {
-            getData
-                .then(result => setData(result.filter(perfume => perfume.category === categoriaId || perfume.category2 === categoriaId || perfume.category3 === categoriaId)))
+            const queryFilter = query(queryCollection, where('categoryFilter', 'array-contains', categoriaId));
+            getDocs(queryFilter)
+                .then(res => setData(res.docs.map(product => ({ id: product.id, ...product.data() }))))
+                .catch((error) => console.log(error))
                 .finally(() => setLoading(false))
         } else {
-            getData
-                .then((result) => setData(result))
+            getDocs(queryCollection)
+                .then(res => setData(res.docs.map(product => ({ id: product.id, ...product.data() }))))
                 .catch((error) => console.log(error))
                 .finally(() => setLoading(false))
         }
