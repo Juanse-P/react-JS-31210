@@ -29,6 +29,7 @@ const Cart = () => {
             <hr />
             <button className="btnVaciarCart" onClick={clearCart}>Vaciar Carrito</button>
             <h5>El precio total es de: $ {totalPrice()} cop</h5>
+            <Link to="/formDatos">Ir a Pagar</Link>
         </div>
     )
 }

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail";
-//import { getData } from "../../mocks/fakeApi";
 import RingLoader from 'react-spinners/RingLoader';
 import "./ItemDetailContainer.css";
 import { useParams } from "react-router-dom";

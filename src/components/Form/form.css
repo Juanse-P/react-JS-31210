@@ -1,0 +1,104 @@
+.bordeError {
+    border: red solid 3px;
+    height: 2.25rem;
+    width: 100vw;
+    border-radius: 0.25rem;
+    border-width: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+.formInput {
+    border: skyblue solid 3px;
+    height: 2.25rem;
+    width: 100vw;
+    border-radius: 0.25rem;
+    border-width: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formTrue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.idBlack{
+    font-weight: bold;
+}
+.itemForm {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.flx-start {
+    align-items: flex-start;
+}
+
+.form-label {
+    margin-right: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+@media (min-width: 1024px) {
+    .formInput {
+      width: 24rem;
+    }
+    .bordeError{
+        width: 24rem;
+    }
+}
+.botonVolver {
+    background: rgb(113, 212, 252);
+    border: 2px black solid;
+    padding: 0.5rem;
+    border-radius: 20px;
+    align-self: flex-start;
+}
+.botonConfirmar{
+    background-color: gray;
+    border: 2px black solid;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 20px;
+    align-self: flex-end;
+}
+.tituForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+}
+.botonesForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.redOblig{
+    color: red;
+}
+.linkInitial {
+    text-align: center;
+    text-decoration: none;
+    color: steelblue;
+    font-size: 1.2rem;
+    color: dimgray;
+    background: #FFE6D4;
+    border-radius: 30px;
+    padding: 5px;
+}

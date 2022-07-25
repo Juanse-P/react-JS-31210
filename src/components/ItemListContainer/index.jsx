@@ -3,7 +3,6 @@ import "./itemListContainer.css";
 import Title from "../Title";
 import ItemList from "../ItemList";
 import RingLoader from 'react-spinners/RingLoader';
-//import { getData } from "../../mocks/fakeApi";
 import { useParams } from "react-router-dom";
 import { getFirestore, collection, getDocs, query, where } from "firebase/firestore";
 
