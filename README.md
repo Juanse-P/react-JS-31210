@@ -17,3 +17,6 @@ Tambien se evidencia el uso de:
 * mui Icons
 * Firebase
 * React loader spiner
+
+***
+Se puede acceder a la pagina ya montada mediente el siguiente link [Visita la pagina web](https://visionary-malabi-e10749.netlify.app)
